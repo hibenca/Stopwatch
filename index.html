@@ -4,29 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <h1 class="h1 text-center">Stopwatch</h1>
-        <p class="text-center">Seconds : Minutes : Hours</p>
-        <p class="text-center"><time><span id="seconds">00</span>:<span id="minutes">00</span>:<span id="hours">00</span></time></p>
-        <div class="row">
-            <div class="col-sm">
-                <button class="btn btn-outline-dark" id="start" onclick="start()">Start</button>
-            </div>
-            <div class="col-sm">
-                <button class="btn btn-outline-dark" id="stop" onclick="stop()">Stop</button>
-            </div>
-            <div class="col-sm">
-                <button class="btn btn-outline-dark" id="reset" onclick="reset()">Reset</button>
-            </div>
-        </div>
-    </div>
+    <h2><time id="time">00:00:00</time></h2>
+    <button id="start" onclick="Start()">START</button>
+    <button id="stop" onclick="Stop()">STOP</button>
+    <button id="reset" onclick="Reset()">RESET</button>
     <script src="app.js"></script>
 </body>
 
