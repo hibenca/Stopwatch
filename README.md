@@ -1,6 +1,6 @@
 # Stopwatch
 
-![Stopwatch](https://i.postimg.cc/fTCjNJ69/Stopwatch.jpg)
+![Stopwatch](https://i.postimg.cc/NMxWjjYn/Stopwatch.jpg)
 
 # Tools used
 
