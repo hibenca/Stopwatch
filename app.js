@@ -12,7 +12,7 @@ let displayHours = 0;
 let t = null;
 
 //Define var to hold stopwatch status
-let status = "stopped";
+let status = false;
 
 //Define time DOM ID
 let time = document.getElementById('time');
@@ -56,16 +56,29 @@ function stopWatch() {
     time.innerHTML = displaySeconds + ":" + displayMinutes + ":" + displayHours;
 }
 
+
 function Start() {
-    status = "started";
-    t = window.setInterval(stopWatch, 1000);
+    if (status === true) {
+        return undefined
+    } else {
+        status = true;
+        startStop();
+    }
 };
 
 function Stop() {
-    status = "stopped";
-    window.clearInterval(t);
+    status = false;
+    startStop();
 };
 
+
+function startStop() {
+    if (status === true) {
+        t = window.setInterval(stopWatch, 1000);
+    } else if (status === false) {
+        window.clearInterval(t);
+    }
+};
 
 function Reset() {
     seconds = 0;
